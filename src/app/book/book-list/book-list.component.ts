@@ -20,10 +20,10 @@ export class BookListComponent implements OnInit {
   }
 
   getBooks(): void {
-    this.bookService.getBooks().subscribe((books) => {
-      this.books = books;
-    });
+    this.bookService.getBooks().subscribe({next: books => 
+      this.books = books , error: e => console.error(e)});
   }
+ 
 
   onSelected(book: BookDetail): void {
     this.selected = true;
