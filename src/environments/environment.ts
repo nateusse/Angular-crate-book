@@ -1,4 +1,4 @@
-const baseUrl = 'https://misw4104-api.herokuapp.com/api/';
+const baseUrl = 'http://localhost:8080/api/';
 
 export const environment = {
     production: true,
